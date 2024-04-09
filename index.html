@@ -33,6 +33,7 @@
                         <div class="card-actions justify-end">
                             <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
+                        <!-- display Triangle area -->
                         <div>
                             <p>Area: <span id="display-triangle-area"></span> <span>cm<sup>2</sup></span></p>
                         </div>
@@ -45,11 +46,15 @@
                         <h2 class="card-title">Rectangle</h2>
                         <p class="text-center">Area (A) = w x I</p>
                         <div class="mb-12">
-                            <input type="text" id="" class="w-24" placeholder="w"><span class="mr-4 ml-2">cm</span>
-                            <input type="text" id="" class="w-24" placeholder="l"><span class="ml-2">cm</span>
+                            <input type="text" id="rectangle-width" class="w-24" placeholder="width"><span class="mr-4 ml-2">cm</span>
+                            <input type="text" id="rectangle-height" class="w-24" placeholder="length"><span class="ml-2">cm</span>
                         </div>
                         <div class="card-actions justify-end">
                             <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                        <!-- display Rectangle area -->
+                        <div>
+                            <p>Area: <span id="display-rectangle-area"></span> <span>cm<sup>2</sup></span> </p>
                         </div>
                     </div>
                 </div>
@@ -87,8 +92,8 @@
                 </div>
             </div>
             <!-- area calculation calculator -->
-            <div class="w-96 border-2 border-gray-700 rounded-md">
-                <h3 class="text-2xl text-center m-8">Area Calculation</h3>
+            <div class="w-96 border-2 border-gray-700 rounded-md bg-[#8c1515]">
+                <h3 class="text-2xl text-center m-8 text-[#e3dfd5]">Area Calculation</h3>
             </div>
         </div>
     </main>
