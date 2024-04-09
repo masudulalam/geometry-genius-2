@@ -118,6 +118,26 @@
                         </div>
                     </div>
                 </div>
+                <!-- ellipse card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/ellipse.png"
+                            alt="Ellipse" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">ellipse</h2>
+                        <p class="text-center">Area (A) = 3.14 x a x b </p>
+                        <div class="mb-12">
+                            <input type="text" id="ellipse-a" class="w-24" placeholder="a"><span class="mr-4 ml-2">cm</span>
+                            <input type="text" id="ellipse-b" class="w-24" placeholder="b"><span class="ml-2">cm</span>
+                        </div>
+                        <div class="card-actions justify-end">
+                            <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                        <!-- display ellipse area -->
+                        <div>
+                            <p>Area: <span id="display-ellipse-area"></span> <span>cm<sup>2</sup></span> </p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- area calculation calculator -->
             <div class="w-96 border-2 border-gray-700 rounded-md bg-[#8c1515]">
@@ -130,6 +150,7 @@
     <script src="script/parallelogram-area.js"></script>
     <script src="script/rhombus-calculate.js"></script>
     <script src="script/pentagon-area.js"></script>
+    <script src="script/ellipse-area.js"></script>
 </body>
 
 </html>
