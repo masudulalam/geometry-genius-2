@@ -86,11 +86,15 @@
                         <h2 class="card-title">Rhombus</h2>
                         <p class="text-center">Area (A) = 0.5 x d <sub>1</sub> x d <sub>2</sub></p>
                         <div class="mb-12">
-                            <input type="text" id="" class="w-24" placeholder="d1"><span class="mr-4 ml-2">cm</span>
-                            <input type="text" id="" class="w-24" placeholder="d2"><span class="ml-2">cm</span>
+                            <input type="text" id="diagonal-1" class="w-24" placeholder="d1"><span class="mr-4 ml-2">cm</span>
+                            <input type="text" id="diagonal-2" class="w-24" placeholder="d2"><span class="ml-2">cm</span>
                         </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="calculateRhombusArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                        <!-- display rhombus area -->
+                        <div>
+                            <p>Area: <span id="display-rhombus-area"></span> <span>cm<sup>2</sup></span> </p>
                         </div>
                     </div>
                 </div>
@@ -104,6 +108,7 @@
     <script src="script/triangle-calculate.js"></script>
     <script src="script/rectangle-area.js"></script>
     <script src="script/parallelogram-area.js"></script>
+    <script src="script/rhombus-calculate.js"></script>
 </body>
 
 </html>
